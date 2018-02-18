@@ -48,7 +48,7 @@ class EditorActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        if (id == "0") menuInflater.inflate(R.menu.editor_menu, menu)
+        if (id != "0") menuInflater.inflate(R.menu.editor_menu, menu)
         return true
     }
 
